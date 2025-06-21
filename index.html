@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Loan Forgiveness Application</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #f1f1f1;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h1 {
+      color: #00ffcc;
+    }
+    form {
+      background-color: #1e1e1e;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: auto;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      background-color: #2c2c2c;
+      border: 1px solid #444;
+      border-radius: 5px;
+      color: white;
+    }
+    input[type="file"] {
+      border: none;
+    }
+    button {
+      margin-top: 20px;
+      background-color: #00ffcc;
+      color: black;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #00ccaa;
+    }
+    .footer {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 14px;
+    }
+    .footer a {
+      color: #00ffcc;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Student Loan Forgiveness Application</h1>
+  <form action="https://formsubmit.co/studentloancoin@gmail.com" method="POST" enctype="multipart/form-data">
+    <label for="name">First Name + Last Initial</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="residence">Country of Residence</label>
+    <input type="text" id="residence" name="residence" required>
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email">
+
+    <label for="servicer">Loan Servicer</label>
+    <select id="servicer" name="servicer" required>
+      <option value="">-- Select --</option>
+      <option value="Navient">Navient</option>
+      <option value="FedLoan">FedLoan</option>
+      <option value="Nelnet">Nelnet</option>
+      <option value="MOHELA">MOHELA</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <label for="loan_last4">Loan Account Last 4 Digits</label>
+    <input type="text" id="loan_last4" name="loan_last4" maxlength="4" required>
+
+    <label for="amount_owed">Approximate Amount Owed</label>
+    <input type="text" id="amount_owed" name="amount_owed" required>
+
+    <label for="screenshot">Upload Loan Account Screenshot (Redact private info)</label>
+    <input type="file" id="screenshot" name="screenshot" accept="image/*,.pdf" required>
+
+    <label for="story">Why should the community choose you?</label>
+    <textarea id="story" name="story" rows="5" maxlength="500" required></textarea>
+
+    <label for="photo">Optional Photo (e.g., graduation)</label>
+    <input type="file" id="photo" name="photo" accept="image/*">
+
+    <h3>Legal Consent</h3>
+    <label><input type="checkbox" name="consent1" required> I understand any info I provide is voluntary and may be publicly reviewed by the Student Loan Coin community.</label>
+    <label><input type="checkbox" name="consent2" required> I confirm I have redacted sensitive data (e.g., SSN, full account #) from uploads.</label>
+    <label><input type="checkbox" name="consent3" required> I agree Student Loan Coin is not responsible for any data I share accidentally.</label>
+    <label><input type="checkbox" name="consent4" required> I understand forgiveness is not guaranteed and outcomes are based on token holder voting.</label>
+    <label><input type="checkbox" name="consent5" required> I release Student Loan Coin and its team from liability related to this application.</label>
+    <label><input type="checkbox" name="consent6" required> If selected, I agree funds will be paid directly to my student loan servicer.</label>
+    <label><input type="checkbox" name="final_confirm" required> I agree to all terms and understand this submission is final.</label>
+
+    <button type="submit">Submit Application</button>
+  </form>
+
+  <div class="footer">
+    <p><a href="/terms.html" target="_blank">Terms of Service</a> | <a href="/privacy.html" target="_blank">Privacy Policy</a></p>
+  </div>
+</body>
+</html>
