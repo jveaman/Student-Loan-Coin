@@ -1,119 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Loan Forgiveness Application</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Loan Coin (SLC)</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <style>
     body {
-      background-color: #121212;
-      color: #f1f1f1;
       font-family: Arial, sans-serif;
-      padding: 20px;
+      background: #0b0b0e;
+      color: #f0f0f0;
+      text-align: center;
+      padding: 30px;
+    }
+    img.logo {
+      width: 100px;
+      margin-bottom: 20px;
     }
     h1 {
-      color: #00ffcc;
+      font-size: 2.5em;
     }
-    form {
-      background-color: #1e1e1e;
-      padding: 20px;
-      border-radius: 10px;
-      max-width: 600px;
-      margin: auto;
-    }
-    label {
-      display: block;
-      margin-top: 15px;
-    }
-    input, select, textarea {
-      width: 100%;
+    .contract-box {
+      background: #1b1b1e;
       padding: 10px;
-      margin-top: 5px;
-      background-color: #2c2c2c;
-      border: 1px solid #444;
-      border-radius: 5px;
+      border-radius: 8px;
+      margin: 20px auto;
+      width: fit-content;
+    }
+    .btn {
+      background-color: #00cc99;
       color: white;
-    }
-    input[type="file"] {
       border: none;
-    }
-    button {
-      margin-top: 20px;
-      background-color: #00ffcc;
-      color: black;
-      padding: 10px 15px;
-      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
       border-radius: 5px;
+      margin: 15px;
       cursor: pointer;
-    }
-    button:hover {
-      background-color: #00ccaa;
-    }
-    .footer {
-      margin-top: 30px;
-      text-align: center;
-      font-size: 14px;
-    }
-    .footer a {
-      color: #00ffcc;
       text-decoration: none;
     }
-    .footer a:hover {
+    .btn:hover {
+      background-color: #009e74;
+    }
+    .links {
+      margin-top: 40px;
+    }
+    .links a {
+      color: #00ccff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    .links a:hover {
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>Student Loan Forgiveness Application</h1>
-  <form action="https://formsubmit.co/studentloancoin@gmail.com" method="POST" enctype="multipart/form-data">
-    <label for="name">First Name + Last Initial</label>
-    <input type="text" id="name" name="name" required>
+  <img src="logo.png" alt="Student Loan Coin Logo" class="logo" />
+  <h1>Student Loan Coin (SLC)</h1>
+  <p>Empowering borrowers. Decentralizing the student loan system.</p>
 
-    <label for="residence">Country of Residence</label>
-    <input type="text" id="residence" name="residence" required>
+  <div class="contract-box">
+    <strong>Contract Address:</strong><br />
+    <code>0x873f5BA8A580e9Eea6cc0B73396DAeeb9ECcDADA</code>
+  </div>
 
-    <label for="email">Email Address</label>
-    <input type="email" id="email" name="email">
+  <a class="btn" href="https://pancakeswap.finance/swap?outputCurrency=0x873f5BA8A580e9Eea6cc0B73396DAeeb9ECcDADA" target="_blank">
+    Buy on PancakeSwap
+  </a>
 
-    <label for="servicer">Loan Servicer</label>
-    <select id="servicer" name="servicer" required>
-      <option value="">-- Select --</option>
-      <option value="Navient">Navient</option>
-      <option value="FedLoan">FedLoan</option>
-      <option value="Nelnet">Nelnet</option>
-      <option value="MOHELA">MOHELA</option>
-      <option value="Other">Other</option>
-    </select>
-
-    <label for="loan_last4">Loan Account Last 4 Digits</label>
-    <input type="text" id="loan_last4" name="loan_last4" maxlength="4" required>
-
-    <label for="amount_owed">Approximate Amount Owed</label>
-    <input type="text" id="amount_owed" name="amount_owed" required>
-
-    <label for="screenshot">Upload Loan Account Screenshot (Redact private info)</label>
-    <input type="file" id="screenshot" name="screenshot" accept="image/*,.pdf" required>
-
-    <label for="story">Why should the community choose you?</label>
-    <textarea id="story" name="story" rows="5" maxlength="500" required></textarea>
-
-    <label for="photo">Optional Photo (e.g., graduation)</label>
-    <input type="file" id="photo" name="photo" accept="image/*">
-
-    <h3>Legal Consent</h3>
-    <label><input type="checkbox" name="consent1" required> I understand any info I provide is voluntary and may be publicly reviewed by the Student Loan Coin community.</label>
-    <label><input type="checkbox" name="consent2" required> I confirm I have redacted sensitive data (e.g., SSN, full account #) from uploads.</label>
-    <label><input type="checkbox" name="consent3" required> I agree Student Loan Coin is not responsible for any data I share accidentally.</label>
-    <label><input type="checkbox" name="consent4" required> I understand forgiveness is not guaranteed and outcomes are based on token holder voting.</label>
-    <label><input type="checkbox" name="consent5" required> I release Student Loan Coin and its team from liability related to this application.</label>
-    <label><input type="checkbox" name="consent6" required> If selected, I agree funds will be paid directly to my student loan servicer.</label>
-    <label><input type="checkbox" name="final_confirm" required> I agree to all terms and understand this submission is final.</label>
-
-    <button type="submit">Submit Application</button>
-  </form>
-
-  <div class="footer">
-    <p><a href="/terms.html" target="_blank">Terms of Service</a> | <a href="/privacy.html" target="_blank">Privacy Policy</a></p>
+  <div class="links">
+    <a href="https://bscscan.com/token/0x873f5BA8A580e9Eea6cc0B73396DAeeb9ECcDADA" target="_blank">BscScan</a>
+    <a href="https://github.com/jveaman/Student-Loan-Coin" target="_blank">GitHub</a>
+    <!-- <a href="#">Twitter</a> (optional for later) -->
   </div>
 </body>
 </html>
