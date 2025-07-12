@@ -11,7 +11,7 @@
       margin: 0;
       padding: 0;
       background: #00264d;
-      color: #ffffff;
+      color: #fff;
     }
     header {
       background-color: #00264d;
@@ -38,14 +38,14 @@
       margin-bottom: 40px;
     }
     .section h2 {
-      border-bottom: 2px solid #1b4b80;
+      border-bottom: 2px solid #ccc;
       padding-bottom: 5px;
     }
     a {
-      color: #66ccff;
+      color: #00ccff;
     }
     footer {
-      background-color: #001f3d;
+      background-color: #00264d;
       color: white;
       text-align: center;
       padding: 10px 0;
@@ -62,23 +62,8 @@
     .button:hover {
       background-color: #218838;
     }
-    .link-buttons a {
-      display: inline-block;
-      margin: 5px 10px;
-      padding: 8px 16px;
-      background: #004c99;
-      color: white;
-      border-radius: 4px;
-      text-decoration: none;
-    }
-    .link-buttons a:hover {
-      background: #007acc;
-    }
-    code {
-      background: #001933;
-      padding: 2px 4px;
-      border-radius: 3px;
-      font-size: 90%;
+    iframe {
+      border: none;
     }
   </style>
 </head>
@@ -92,18 +77,20 @@
     <div class="section">
       <h2>About the Project</h2>
       <p>
-        Student Loan Coin (SLC) is a social impact token born from debt. The system is broken — institutions borrow at <strong>1-2%</strong> and lend to students at <strong>6-8%</strong>, locking an entire generation into financial servitude.
+        Student Loan Coin (SLC) is a movement born from debt. We are building a decentralized solution to the student loan crisis — one token at a time. The current system is rigged: institutions borrow at <strong>1-2%</strong> interest and lend to students at <strong>6-8%</strong> or more. We believe it’s time to take control.
       </p>
       <p>
-        We’re building a community-powered, decentralized system that pushes back. Every transaction fuels our mission:
+        SLC is not just a meme token. It is a social impact token with purpose. A <strong>4% tax</strong> on every transaction funds our mission:
         <ul>
-          <li>1% to Forgiveness Wallet 🏦</li>
-          <li>1% to Marketing 📢</li>
-          <li>1% to Liquidity 💧</li>
-          <li>1% to Operations ⚙️</li>
+          <li>1% to the <strong>Forgiveness Wallet</strong> — paying off student loans one at a time.</li>
+          <li>1% to <strong>Marketing</strong> — to grow awareness and adoption.</li>
+          <li>1% to <strong>Liquidity</strong> — for stability and scalability.</li>
+          <li>1% to <strong>Operations</strong> — to fund infrastructure and expansion.</li>
         </ul>
       </p>
-      <p><strong>This isn’t just a token — it’s a movement.</strong></p>
+      <p>
+        <strong>This isn’t just a token. It’s a mission.</strong> We’re building a community-powered movement to destroy student debt.
+      </p>
     </div>
 
     <div class="section">
@@ -112,61 +99,58 @@
         <li>Launch</li>
         <li>Buy $SLC</li>
         <li>Price rises with demand</li>
-        <li>1% of each transaction funds Forgiveness Wallet</li>
+        <li>1% of every transaction funds the Forgiveness Wallet</li>
+        <li>Wallet grows with the community</li>
         <li>Forgiveness applications open</li>
-        <li>Community vetting & on-chain voting</li>
-        <li>Random draw from vetted applicants</li>
-        <li>Payment sent to verified lender</li>
-        <li>One loan crushed — thousands more to go</li>
+        <li>Community reviews and votes (on-chain)</li>
+        <li>Random draw from approved applicants</li>
+        <li>Loan payment sent directly to verified lender</li>
+        <li>One down — thousands more to go</li>
       </ol>
     </div>
 
     <div class="section">
-      <h2>Live Token Stats</h2>
-      <p>
-        View price chart and trading data on Dexscreener:
-        <a href="https://dexscreener.com/bsc/0x873f5ba8a580e9eea6cc0b73396daeeb9eccdada" target="_blank" class="button">📈 View Stats</a>
-      </p>
+      <h2>Live Stats</h2>
+      <iframe src="https://dexscreener.com/bsc/0x873f5ba8a580e9eea6cc0b73396daeeb9eccdada" width="100%" height="400"></iframe>
+    </div>
+
+    <div class="section">
+      <h2>Resources</h2>
+      <ul>
+        <li><a href="Student Loan Coin Whitepaper.pdf" target="_blank">📄 Whitepaper (PDF)</a></li>
+        <li><a href="https://bscscan.com/token/0x873f5BA8A580e9Eea6cc0B73396DAeeb9ECcDADA" target="_blank">🔍 View Contract on BscScan</a></li>
+        <li><a href="https://twitter.com/SLCmovement" target="_blank">🐦 Follow us on Twitter</a></li>
+        <li><a href="https://pancakeswap.finance/swap?outputCurrency=0x873f5BA8A580e9Eea6cc0B73396DAeeb9ECcDADA" target="_blank">💱 Swap on PancakeSwap</a></li>
+      </ul>
     </div>
 
     <div class="section">
       <h2>How to Buy $SLC</h2>
       <ol>
-        <li>
-          ✅ Step 1: <strong>Install MetaMask</strong> — <a href="https://metamask.io/" target="_blank">Download here</a><br/>
-          Create your wallet and save your recovery phrase.
+        <li><strong>Install MetaMask:</strong> Visit <a href="https://metamask.io/" target="_blank">metamask.io</a> and install the extension or app. Create a wallet and back up your Secret Recovery Phrase.</li>
+        <li><strong>Add BNB Smart Chain:</strong> Open MetaMask → Network dropdown → "Add Network" → Enter:
+          <ul>
+            <li>Network Name: BNB Smart Chain</li>
+            <li>RPC URL: https://bsc-dataseed.binance.org/</li>
+            <li>Chain ID: 56</li>
+            <li>Currency Symbol: BNB</li>
+            <li>Block Explorer: https://bscscan.com</li>
+          </ul>
         </li>
-        <li>
-          ✅ Step 2: <strong>Add BNB Chain</strong><br/>
-          Network Name: BNB Smart Chain<br/>
-          RPC: https://bsc-dataseed.binance.org/<br/>
-          Chain ID: 56<br/>
-          Symbol: BNB<br/>
-          Explorer: https://bscscan.com
+        <li><strong>Buy BNB:</strong> Easiest way is via MetaMask portal:
+          <ul>
+            <li>Visit <a href="https://portfolio.metamask.io/buy/build-quote" target="_blank">MetaMask Buy Page</a></li>
+            <li>Connect your wallet</li>
+            <li>Select BNB and a provider (MoonPay, Transak, etc.)</li>
+            <li>Choose your region/payment method</li>
+            <li>Complete the transaction — BNB will appear in your wallet</li>
+          </ul>
+          <em>If this doesn't work in your area, buy BNB on a centralized exchange (Binance, KuCoin), and transfer it to your MetaMask wallet using BEP-20 network.</em>
         </li>
-        <li>
-          ✅ Step 3: <strong>Buy BNB in MetaMask</strong><br/>
-          Use a provider like MoonPay or Transak.
-        </li>
-        <li>
-          ✅ Step 4: <strong>Swap BNB for $SLC</strong><br/>
-          Visit PancakeSwap → Paste contract:
-          <br/><code>0x873f5BA8A580e9Eea6cc0B73396DAeeb9ECcDADA</code>
-        </li>
-        <li>
-          ✅ Step 5: <strong>Import $SLC into MetaMask</strong><br/>
-          Add token manually with the same contract.
-        </li>
+        <li><strong>Swap for $SLC:</strong> Visit <a href="https://pancakeswap.finance/swap" target="_blank">PancakeSwap</a>, connect your MetaMask, paste our contract address, and swap your BNB for $SLC:</li>
+        <code>0x873f5BA8A580e9Eea6cc0B73396DAeeb9ECcDADA</code>
+        <li><strong>View $SLC in MetaMask:</strong> Go to Assets → "Import Tokens" → Paste contract address above → Done!</li>
       </ol>
-
-      <div class="link-buttons">
-        <a href="https://metamask.io/" target="_blank">🦊 Install MetaMask</a>
-        <a href="https://pancakeswap.finance/swap?outputCurrency=0x873f5BA8A580e9Eea6cc0B73396DAeeb9ECcDADA" target="_blank">🥞 Buy on PancakeSwap</a>
-        <a href="https://bscscan.com/token/0x873f5BA8A580e9Eea6cc0B73396DAeeb9ECcDADA" target="_blank">🔍 BscScan</a>
-        <a href="Student Loan Coin Whitepaper.pdf" target="_blank">📄 Whitepaper</a>
-        <a href="https://twitter.com/SLCmovement" target="_blank">🐦 Twitter</a>
-        <a href="https://github.com/jveaman/Student-Loan-Coin" target="_blank">💻 GitHub</a>
-      </div>
     </div>
   </div>
 
