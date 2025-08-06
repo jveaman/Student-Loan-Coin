@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Student Loan Coin (SLC)</title>
-  <link rel="icon" href="studentloancoin_logo.png" type="image/png">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Student Loan Coin (SLC)
+  </title>
+  <link href="studentloancoin_logo.png" rel="icon" type="image/png"/>
   <style>
-    body {
+   body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
@@ -65,104 +67,330 @@
     iframe {
       border: none;
     }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    table td {
+      padding: 6px 0;
+    }
+    @media (max-width: 600px) {
+      .content {
+        padding: 15px;
+      }
+      h1 {
+        font-size: 1.4em;
+      }
+    }
   </style>
-</head>
-<body>
+ </head>
+ <body>
   <header>
-    <img src="studentloancoin_logo.png" alt="SLC Logo">
-    <h1>Student Loan Coin (SLC)</h1>
+   <img alt="SLC Logo" src="studentloancoin_logo.png"/>
+   <h1>
+    Student Loan Coin (SLC)
+   </h1>
   </header>
-
   <div class="content">
-    <div class="section">
-      <h2>About the Project</h2>
-      <p>
-        Student Loan Coin (SLC) is a movement born from debt. We are building a decentralized solution to the student loan crisis — one token at a time. The current system is rigged: institutions borrow at <strong>1-2%</strong> interest and lend to students at <strong>6-8%</strong> or more. We believe it’s time to take control.
-      </p>
-      <p>
-        SLC is not just a meme token. It is a social impact token with purpose. A <strong>4% tax</strong> on every transaction funds our mission:
-        <ul>
-          <li>1% to the <strong>Forgiveness Wallet</strong> — paying off student loans one at a time.</li>
-          <li>1% to <strong>Marketing</strong> — to grow awareness and adoption.</li>
-          <li>1% to <strong>Liquidity</strong> — for stability and scalability.</li>
-          <li>1% to <strong>Operations</strong> — to fund infrastructure and expansion.</li>
-        </ul>
-      </p>
-      <p>
-        <strong>This isn’t just a token. It’s a mission.</strong> We’re building a community-powered movement to destroy student debt.
-      </p>
-    </div>
-
-    <div class="section">
-      <h2>Vision Flow</h2>
-      <ol>
-        <li>Launch</li>
-        <li>Buy $SLC</li>
-        <li>Price rises with demand</li>
-        <li>1% of every transaction funds the Forgiveness Wallet</li>
-        <li>Wallet grows with the community</li>
-        <li>Forgiveness applications open</li>
-        <li>Community reviews and votes (on-chain)</li>
-        <li>Random draw from approved applicants</li>
-        <li>Loan payment sent directly to verified lender</li>
-        <li>One down — thousands more to go</li>
-      </ol>
-    </div>
-
-    <div class="section">
-      <h2>Live Stats</h2>
-      <iframe src="https://dexscreener.com/bsc/0x873f5ba8a580e9eea6cc0b73396daeeb9eccdada" width="100%" height="400"></iframe>
-    </div>
-
-    <div class="section">
-      <h2>Resources</h2>
-      <ul>
-        <li><a href="Student Loan Coin Whitepaper.pdf" target="_blank">📄 Whitepaper (PDF)</a></li>
-        <li><a href="https://bscscan.com/token/0x873f5BA8A580e9Eea6cc0B73396DAeeb9ECcDADA" target="_blank">🔍 View Contract on BscScan</a></li>
-        <li><a href="https://twitter.com/SLCmovement" target="_blank">🐦 Follow us on Twitter</a></li>
-        <li><a href="https://pancakeswap.finance/swap?outputCurrency=0x873f5BA8A580e9Eea6cc0B73396DAeeb9ECcDADA" target="_blank">💱 Swap on PancakeSwap</a></li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>How to Buy $SLC</h2>
-      <ol>
-        <li><strong>Install MetaMask:</strong> Visit <a href="https://metamask.io/" target="_blank">metamask.io</a> and install the extension or app. Create a wallet and back up your Secret Recovery Phrase.</li>
-        <li><strong>Add BNB Smart Chain:</strong> Open MetaMask → Network dropdown → "Add Network" → Enter:
-          <ul>
-            <li>Network Name: BNB Smart Chain</li>
-            <li>RPC URL: https://bsc-dataseed.binance.org/</li>
-            <li>Chain ID: 56</li>
-            <li>Currency Symbol: BNB</li>
-            <li>Block Explorer: https://bscscan.com</li>
-          </ul>
-        </li>
-        <li><strong>Buy BNB:</strong> Easiest way is via MetaMask portal:
-          <ul>
-            <li>Visit <a href="https://portfolio.metamask.io/buy/build-quote" target="_blank">MetaMask Buy Page</a></li>
-            <li>Connect your wallet</li>
-            <li>Select BNB and a provider (MoonPay, Transak, etc.)</li>
-            <li>Choose your region/payment method</li>
-            <li>Complete the transaction — BNB will appear in your wallet</li>
-          </ul>
-          <em>If this doesn't work in your area, buy BNB on a centralized exchange (Binance, KuCoin), and transfer it to your MetaMask wallet using BEP-20 network.</em>
-        </li>
-        <li><strong>Swap for $SLC:</strong> Visit <a href="https://pancakeswap.finance/swap" target="_blank">PancakeSwap</a>, connect your MetaMask, paste our contract address, and swap your BNB for $SLC:</li>
-        <code>0x873f5BA8A580e9Eea6cc0B73396DAeeb9ECcDADA</code>
-        <li><strong>View $SLC in MetaMask:</strong> Go to Assets → "Import Tokens" → Paste contract address above → Done!</li>
-      </ol>
-    </div>
+   <div class="section" style="text-align: center;">
+    <a class="button" href="student_loan_coin_whitepaper.pdf" target="_blank">
+     📄 Download Whitepaper (PDF)
+    </a>
+   </div>
+   <div class="section">
+    <h2>
+     About the Project
+    </h2>
+    <p>
+     Student Loan Coin (SLC) is a movement born from debt. We are building a decentralized solution to the student loan crisis — one token at a time. The current system is rigged: institutions borrow at
+     <strong>
+      1-2%
+     </strong>
+     interest and lend to students at
+     <strong>
+      6-8%
+     </strong>
+     or more. We believe it’s time to take control.
+    </p>
+    <p>
+     SLC is not just a meme token. It is a social impact token with purpose.
+    </p>
+    <ul>
+     <li>
+      2% to the
+      <strong>
+       Forgiveness Wallet
+      </strong>
+      — paying off student loans one at a time.
+     </li>
+     <li>
+      1% to
+      <strong>
+       Marketing
+      </strong>
+      — to grow awareness and adoption.
+     </li>
+     <li>
+      1% to
+      <strong>
+       Liquidity
+      </strong>
+      — for stability and scalability.
+     </li>
+    </ul>
+    <p>
+     <strong>
+      This isn’t just a token. It’s a mission.
+     </strong>
+     We’re building a community-powered movement to destroy student debt.
+    </p>
+   </div>
+   <div class="section">
+    <h2>
+     Token Contract Summary
+    </h2>
+    <table>
+     <tr>
+      <td>
+       <strong>
+        Name:
+       </strong>
+      </td>
+      <td>
+       Student Loan Coin
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <strong>
+        Symbol:
+       </strong>
+      </td>
+      <td>
+       SLC
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <strong>
+        Network:
+       </strong>
+      </td>
+      <td>
+       BNB Smart Chain
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <strong>
+        Contract:
+       </strong>
+      </td>
+      <td>
+       <code>
+        0x873f5BA8A580e9Eea6cc0B73396DAeeb9ECcDADA
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <strong>
+        Total Supply:
+       </strong>
+      </td>
+      <td>
+       6.9 billion
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <strong>
+        Buy/Sell Tax:
+       </strong>
+      </td>
+      <td>
+       4% Total (2% Forgiveness, 1% Marketing, 1% Liquidity)
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="section">
+    <h2>
+     Forgiveness Eligibility
+    </h2>
+    <ul>
+     <li>
+      Hold at least
+      <strong>
+       200,000 SLC
+      </strong>
+     </li>
+     <li>
+      Minimum holding period:
+      <strong>
+       90 days
+      </strong>
+     </li>
+     <li>
+      Must still hold that amount at time of application
+     </li>
+     <li>
+      Only one application per wallet per month
+     </li>
+     <li>
+      Multiple wallets may apply if each meets requirements
+     </li>
+    </ul>
+   </div>
+   <div class="section">
+    <h2>
+     Token Utility &amp; DAO Expansion
+    </h2>
+    <p>
+     SLC may evolve to include additional utilities such as DAO governance votes, access to exclusive content or tools, and participation in partner projects aligned with the mission of student loan relief.
+    </p>
+    <p>
+     Student Loan Coin (SLC) is more than just a transaction-based redistribution mechanism — it is designed to evolve. While the current focus is on building and funding the Forgiveness Wallet, long-term utility will expand to provide token holders with meaningful participation in project governance and growth.
+    </p>
+    <ul>
+     <li>
+      <strong>
+       Governance Participation:
+      </strong>
+      Token holders may participate in DAO voting on forgiveness, audits, or future changes.
+     </li>
+     <li>
+      <strong>
+       Staking (Future):
+      </strong>
+      Rewards for long-term holders and bonus chances in forgiveness draws.
+     </li>
+     <li>
+      <strong>
+       Access to Tools:
+      </strong>
+      Exclusive dashboards, reports, and tracking for verified holders.
+     </li>
+     <li>
+      <strong>
+       Cross-Chain Expansion:
+      </strong>
+      Potential bridges to other chains for broader utility.
+     </li>
+     <li>
+      <strong>
+       Partnership Use Cases:
+      </strong>
+      Educational apps or discounts powered by SLC acceptance.
+     </li>
+    </ul>
+    <p>
+     <em>
+      These utilities are planned, not guaranteed, and will depend on project development, community input, and adoption milestones.
+     </em>
+    </p>
+   </div>
+   <div class="section">
+    <h2>
+     Live Stats
+    </h2>
+    <iframe height="400" src="https://dexscreener.com/bsc/0x873f5ba8a580e9eea6cc0b73396daeeb9eccdada" width="100%">
+    </iframe>
+   </div>
   </div>
-
+  <div class="section">
+   <div style="max-width: 900px; margin: auto;">
+    <h2>
+     How to Buy $SLC
+    </h2>
+    <ol>
+     <li>
+      <strong>
+       Install MetaMask:
+      </strong>
+      Visit
+      <a href="https://metamask.io/" target="_blank">
+       metamask.io
+      </a>
+      and install the extension or app. Create a wallet and back up your Secret Recovery Phrase.
+     </li>
+     <li>
+      <strong>
+       Add BNB Smart Chain:
+      </strong>
+      Open MetaMask → Network dropdown → "Add Network" → Enter:
+      <ul>
+       <li>
+        Network Name: BNB Smart Chain
+       </li>
+       <li>
+        RPC URL: https://bsc-dataseed.binance.org/
+       </li>
+       <li>
+        Chain ID: 56
+       </li>
+       <li>
+        Currency Symbol: BNB
+       </li>
+       <li>
+        Block Explorer: https://bscscan.com
+       </li>
+      </ul>
+     </li>
+     <li>
+      <strong>
+       Buy BNB:
+      </strong>
+      Easiest way is via MetaMask portal:
+      <ul>
+       <li>
+        Visit
+        <a href="https://portfolio.metamask.io/buy/build-quote" target="_blank">
+         MetaMask Buy Page
+        </a>
+       </li>
+       <li>
+        Connect your wallet
+       </li>
+       <li>
+        Select BNB and a provider (MoonPay, Transak, etc.)
+       </li>
+       <li>
+        Choose your region/payment method
+       </li>
+       <li>
+        Complete the transaction — BNB will appear in your wallet
+       </li>
+      </ul>
+      <em>
+       If this doesn't work in your area, buy BNB on a centralized exchange (Binance, KuCoin), and transfer it to your MetaMask wallet using BEP-20 network.
+      </em>
+     </li>
+     <li>
+      <strong>
+       Swap for $SLC:
+      </strong>
+      Visit
+      <a href="https://pancakeswap.finance/swap" target="_blank">
+       PancakeSwap
+      </a>
+      , connect your MetaMask, paste our contract address, and swap your BNB for $SLC:
+     </li>
+     <code>
+      0x873f5BA8A580e9Eea6cc0B73396DAeeb9ECcDADA
+     </code>
+     <li>
+      <strong>
+       View $SLC in MetaMask:
+      </strong>
+      Go to Assets → "Import Tokens" → Paste contract address above → Done!
+     </li>
+    </ol>
+   </div>
+  </div>
   <footer>
-    &copy; 2025 Student Loan Coin — Decentralized. Transparent. For us, by us.
+   © 2025 Student Loan Coin — Decentralized. Transparent. For us, by us.
   </footer>
-
-<br><div style="text-align:center;">
-  <a href="Student_Loan_Coin_Whitepaper_2025_FINAL.pdf" download style="font-size:18px; padding:10px 20px; background-color:#007BFF; color:white; text-decoration:none; border-radius:5px;">
-    Download Whitepaper (PDF)
-  </a>
-</div><br>
-
-</body>
+ </body>
 </html>
